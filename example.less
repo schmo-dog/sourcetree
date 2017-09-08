@@ -1,0 +1,41 @@
+// Spinning Loading Icon
+.spin-keyframes() {
+	@keyframes spin {
+		from {
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(360deg);
+		}
+	}
+}
+
+.loading-icon() {
+	.animation-name(spin);
+	.animation-duration(1000ms);
+	.animation-iteration-count(infinite);
+	.animation-timing-function(linear);
+}
+
+
+.spinner-container {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    .loading-icon();
+    .spin-keyframes();
+    display: inline-block;
+}
+
+.loading2 {
+	display: inline-block;
+	margin-top: 40px;
+	font-weight: bold;
+	color: white;
+}
+
+.icon-spin {
+	font-size: 46px;
+	color: white;
+}
